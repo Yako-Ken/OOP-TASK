@@ -22,14 +22,12 @@ void Account::displayInfo()
 
 }
 
-Account Account::operator+(const Account &other)
+Account Account::operator+(const Account& result)
 {
+    
 }
 
 int Account::getTotalAccounts()
 {
 }
 
-Account::~Account()
-{
-}
