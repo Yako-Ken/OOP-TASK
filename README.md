@@ -18,20 +18,31 @@ The project consists of three main classes:
 
 ### Project Files
 
-- `Account.h` → Declaration of the base Account class
+- `Account.h` → Declaration of the base Account class 
 - `Account.cpp` → Implementation of the Account class methods
-- `PersonalAccount.h` → Declaration of the PersonalAccount class
+- `PersonalAccount.h` → Declaration of the PersonalAccount class 
 - `PersonalAccount.cpp` → Implementation of the PersonalAccount class
 - `BusinessAccount.h` → Declaration of the BusinessAccount class
 - `BusinessAccount.cpp` → Implementation of the BusinessAccount class
+- `Main.cpp` → Organization of program's steps
 
-### Team Members
+### Project Team
+
+#### Team Members Names & Each Member Tasks
 
 - Mo'men Shalaby
+  → Declaration of `Account.h`,`Account.cpp`,`PersonalAccount.h`,`PersonalAccount.cpp`,`BusinessAccount.h`,`BusinessAccount.cpp` and `Main.cpp`
 - Ahmed Essam
+  → Implementation of `withdraw()` function in `BusinessAccount.cpp`
 - Ahmed Abdelazeez
+  → Organization of `Main.cpp` and maintaining the right order
 - Marawan Omar
+  → Implementation of `withdraw()` function in `PersonalAccount.cpp`
 - Youssef Gamal
+  → Implementation of `deposit()` function and `getTotalAccount()` function
 - Seif El deen Mohammed
+  → Implementation of `displayInfo()` function and `operator+()` function
+
+
 
 ### Project Deadline -> 12/21/2025
