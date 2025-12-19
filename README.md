@@ -24,7 +24,7 @@ The project consists of three main classes:
 - `PersonalAccount.cpp` → Implementation of the PersonalAccount class
 - `BusinessAccount.h` → Declaration of the BusinessAccount class
 - `BusinessAccount.cpp` → Implementation of the BusinessAccount class
-- `Main.cpp` → Organization of program's steps
+- `main.cpp` → Organization of program's steps
 
 ### Project Team
 
@@ -35,7 +35,7 @@ The project consists of three main classes:
 - Ahmed Essam
   → Implementation of `withdraw()` function in `BusinessAccount.cpp`
 - Ahmed Abdelazeez
-  → Organization of `Main.cpp` and maintaining the right order
+  → Organization of `main.cpp` and maintaining the right order
 - Marawan Omar
   → Implementation of `withdraw()` function in `PersonalAccount.cpp`
 - Youssef Gamal
