@@ -38,6 +38,10 @@ Account::Account(int id, double bal)
 }
 
 void Account::choice(){
+       char s;
+    do {
+
+
     string answer,answer2,nID,name;
 	int id;
 	double bal;
@@ -77,7 +81,7 @@ void Account::choice(){
     		bA.deposit(amount);
 
     		bA.displayInfo();
-    		cout<<"Accounts created= "<<bA.getTotalAccounts();
+    		cout<<"Accounts created= "<<bA.getTotalAccounts()<<endl;
 		}
 		else if (answer2=="w" || answer2=="W"){
             cout<<"Enter withdraw amount.\n"<<endl;
@@ -85,11 +89,16 @@ void Account::choice(){
     		bA.withdraw(amount);
 
     		bA.displayInfo();
-    		cout<<"Accounts created= "<<bA.getTotalAccounts();
+    		cout<<"Accounts created= "<<bA.getTotalAccounts()<<endl;
+
 		}
 	}
+	cout << "\nIf you want to Continue : Enter C\n";
+    cin >> s ;
 }
+ while (s=='c'||s=='C');
 
+}
 double Account::deposit(double amount)
 
 {
