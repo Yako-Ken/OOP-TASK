@@ -6,6 +6,7 @@ using namespace std;
 PersonalAccount::PersonalAccount(int id, double bal, string nID)
     : Account(id, bal)
 {
+    PersonalName = name;
 }
 
 double PersonalAccount::withdraw(double amount)
