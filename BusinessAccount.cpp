@@ -16,7 +16,7 @@ double BusinessAccount::withdraw(double amount)
     }
 
     if(amount > 50000){
-        cout << "ERROR : Maximum withdrawal limit is 5000" << endl;
+        cout << "ERROR : Maximum withdrawal limit is 50000" << endl;
         return 0.0;
     }
     if(amount > balance){
