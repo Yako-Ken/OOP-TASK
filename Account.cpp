@@ -1,49 +1,40 @@
-#include "Account.h"
-#include <iostream>
-using namespace std;
+#ifndef ACCOUNT_H
 
-int Account::totalAccounts = 0;
+#define ACCOUNT_H
 
-Account::Account()
+
+
+class Account
+
 {
-    accountID = 0;
-    balance = 0.0;
-    totalAccounts++;
-}
 
-Account::Account(int id, double bal)
-{
-    accountID = id;
-    balance = bal;
-    totalAccounts++;
-}
+protected:
 
-double Account::deposit(double amount)
-{
-    if(amount > 0)
-    {
-        balance += amount;
-    }
-    return balance;
-}
+    int accountID;
 
-void Account::displayInfo()
-{
-    cout << "Account ID: " << accountID << endl;
-    cout << "Balance: " << balance << endl;
-}
+    double balance;
 
-Account Account::operator+(const Account& result)
-{
-    Account temp;
-    temp.accountID = this->accountID;
-    temp.balance = this->balance + result.balance;
-    totalAccounts--;
-    return temp;
-}
+    static int totalAccounts;
 
-int Account::getTotalAccounts()
-{
-    return totalAccounts;
-}
 
+public:
+
+    Account();
+
+    Account(int id, double bal);
+
+    void choice();
+
+    double deposit(double amount);
+
+    virtual void displayInfo();
+
+    static int getTotalAccounts();
+
+    Account operator+(const Account& result);
+
+};
+
+
+
+#endif
