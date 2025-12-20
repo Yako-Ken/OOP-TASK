@@ -5,6 +5,7 @@ using namespace std;
 BusinessAccount::BusinessAccount(int id, double bal, string name)
     : Account(id, bal)
 {
+    businessName = name;
 }
 
 double BusinessAccount::withdraw(double amount)
